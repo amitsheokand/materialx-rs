@@ -1,3 +1,5 @@
+mod materialx;
+
 use sxd_xpath::evaluate_xpath;
 use sxd_xpath::Factory;
 use sxd_document::parser;
@@ -23,6 +25,8 @@ pub fn read_mtlx(filename: &str) {
     let xpath = factory.build(xpath_expression).expect("failed to compile XPath");
     xpath.expect("No XPath expression was compiled");
     let value = evaluate_xpath(&document, xpath_expression).expect("evaluation failed");
+
+    println!("xml_string: {:#?}", xml_string);
 
     println!("Value: {}", value.string());
 

@@ -1,0 +1,10 @@
+mod blur_node_glsl;
+mod geom_color_node_glsl;
+mod geom_prop_value_node_glsl;
+mod height_to_normal_node_glsl;
+mod light_compound_node_glsl;
+mod light_node_glsl;
+mod light_shader_node_glsl;
+mod num_lights_node_glsl;
+mod surface_shader_node_glsl;
+mod unlit_surface_node_glsl;
